@@ -7,13 +7,13 @@ const PORT = 5000;
 // setup handlebars
 app.engine(("hbs"), handlebars.engine({ extname: "hbs" }));
 app.set("view engine", "hbs");
-app.set("view", "src/views");
+app.set("views", "src/views");
 
-app.use(express.static, "src/public");
+app.use(express.static('src/public'));
 
 app.get("/", (req, res) => {
-    res.write("Test");
-    res.end();
+    res.render("home", { layout: false });
+    // res.end();
 });
 
 app.listen(PORT, () => console.log(`Server is listening on http://localhost:${PORT}`));
