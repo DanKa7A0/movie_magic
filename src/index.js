@@ -9,6 +9,8 @@ app.engine(("hbs"), handlebars.engine({ extname: "hbs" }));
 app.set("view engine", "hbs");
 app.set("view", "src/views");
 
+app.use(express.static, "src/public");
+
 app.get("/", (req, res) => {
     res.write("Test");
     res.end();
