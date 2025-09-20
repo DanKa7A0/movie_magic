@@ -16,14 +16,14 @@ Express JS backend project
  - [x] Render About Page
 ### Architecture and dynamic rendering
  - [x] Add home controller
- - [ ] Add movie service
- - [ ] Add movie data layer
- - [ ] Render movies on home page
+ - [x] Add routes
+ - [x] Add movie service
+ - [x] Add movie model
+ - [x] Render movies on home page
  - [ ] Show no movies screen
 ### Create Movie
  - [ ] Add Movie Controller
  - [ ] Show create movie page
- - [ ] Add routes
  - [ ] Add 404 page
  - [ ] Ready body data
  - [ ] Create movie
