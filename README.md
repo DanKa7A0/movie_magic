@@ -12,8 +12,8 @@ Express JS backend project
  - [x] Setup Handlebars `npm i express-handlebars`
  - [x] Setup static files
  - [x] Render Home Page
- - [ ] Add Layout
- - [ ] Render About Page
+ - [x] Add Layout
+ - [x] Render About Page
 ### Architecture and dynamic rendering
  - [ ] Add home controller
  - [ ] Add movie data layer

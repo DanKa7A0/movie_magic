@@ -9,11 +9,17 @@ app.engine(("hbs"), handlebars.engine({ extname: "hbs" }));
 app.set("view engine", "hbs");
 app.set("views", "src/views");
 
+// setup static files
 app.use(express.static('src/public'));
 
+// routing
 app.get("/", (req, res) => {
     res.render("home");
-    // res.end();
 });
 
+app.get("/about", (req, res) => {
+    res.render("about");
+});
+
+// start
 app.listen(PORT, () => console.log(`Server is listening on http://localhost:${PORT}`));
