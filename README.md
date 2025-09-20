@@ -15,9 +15,9 @@ Express JS backend project
  - [x] Add Layout
  - [x] Render About Page
 ### Architecture and dynamic rendering
- - [ ] Add home controller
- - [ ] Add movie data layer
+ - [x] Add home controller
  - [ ] Add movie service
+ - [ ] Add movie data layer
  - [ ] Render movies on home page
  - [ ] Show no movies screen
 ### Create Movie
