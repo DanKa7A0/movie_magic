@@ -1,0 +1,23 @@
+{
+  "name": "movie_magic",
+  "version": "1.0.0",
+  "description": "Express JS backend project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "node --watch ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanKa7A0/movie_magic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DanKa7A0/movie_magic/issues"
+  },
+  "homepage": "https://github.com/DanKa7A0/movie_magic#readme"
+}
