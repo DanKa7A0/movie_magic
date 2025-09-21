@@ -22,7 +22,7 @@ Express JS backend project
  - [x] Render movies on home page
  - [x] Show no movies screen
 ### Create Movie
- - [ ] Add Movie Controller
+ - [x] Add Movie Controller
  - [ ] Show create movie page
  - [ ] Add 404 page
  - [ ] Ready body data
@@ -50,4 +50,4 @@ Express JS backend project
 ### Bonuses
  - [ ] Dynamic page title
  - [ ] Rating (temp solution)
- - [ ] File Persistance
+ - [x] File Persistance
