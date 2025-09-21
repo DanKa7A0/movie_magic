@@ -30,7 +30,7 @@ Express JS backend project
    - [x] Add service
    - [x] Add model method for creating movie
  - [x] Redirect after creation
- - [ ] Add unique if for each cerated movie
+ - [x] Add unique if for each cerated movie
 ### Details
  - [ ] Add navigation button for detail page
  - [ ] Add route with param for details page 
