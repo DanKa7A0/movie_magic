@@ -23,14 +23,13 @@ Express JS backend project
  - [x] Show no movies screen
 ### Create Movie
  - [x] Add Movie Controller
- - [ ] Show create movie page
- - [ ] Add 404 page
- - [ ] Ready body data
- - [ ] Create movie
-   - [ ] Add action
-   - [ ] Add service
-   - [ ] Add model method for creating movie
- - [ ] Redirect after creation
+ - [x] Show create movie page
+ - [x] Ready body data
+ - [x] Create movie
+   - [x] Add action
+   - [x] Add service
+   - [x] Add model method for creating movie
+ - [x] Redirect after creation
  - [ ] Add unique if for each cerated movie
 ### Details
  - [ ] Add navigation button for detail page
@@ -51,3 +50,4 @@ Express JS backend project
  - [ ] Dynamic page title
  - [ ] Rating (temp solution)
  - [x] File Persistance
+ - [ ] Add 404 page

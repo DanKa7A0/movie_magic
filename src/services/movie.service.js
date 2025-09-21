@@ -8,4 +8,9 @@ function getOne(){
 
 }
 
-export default {getAll, getOne};
+async function createMovie(data){
+    const movie = new Movie(data);
+    return await movie.save();
+}
+
+export default {getAll, getOne, createMovie};

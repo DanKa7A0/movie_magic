@@ -10,8 +10,9 @@ app.engine(("hbs"), handlebars.engine({ extname: "hbs" }));
 app.set("view engine", "hbs");
 app.set("views", "src/views");
 
-// setup static files
+// setup
 app.use(express.static('src/public'));
+app.use(express.urlencoded());
 
 // routing
 app.use(routes);
