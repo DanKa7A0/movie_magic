@@ -1,11 +1,11 @@
 import Movie from "../models/movie.model.js";
 
-function readAll(){
+function getAll(){
     return Movie.findAll();
 }
 
-function readOne(){
+function getOne(){
 
 }
 
-export default {readAll, readOne};
+export default {getAll, getOne};
