@@ -45,7 +45,7 @@ Express JS backend project
    - [x] By year
    - [x] By genre
    - [x] By title 
- - [ ] Remember search words
+ - [x] Remember search words
 ### Bonuses
  - [ ] Dynamic page title
  - [x] Rating (temp solution)
