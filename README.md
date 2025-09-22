@@ -39,7 +39,7 @@ Express JS backend project
  - [x] Render details page with dynamic data
 ### Search
  - [x] Show static search page
- - [ ] Render all movies
+ - [x] Render all movies
  - [ ] Modify search form
  - [ ] Filter movies
    - [ ] By year
