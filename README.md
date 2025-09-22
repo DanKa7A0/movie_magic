@@ -38,7 +38,7 @@ Express JS backend project
  - [x] Find movie by id from model
  - [x] Render details page with dynamic data
 ### Search
- - [ ] Show static search page
+ - [x] Show static search page
  - [ ] Render all movies
  - [ ] Modify search form
  - [ ] Filter movies
