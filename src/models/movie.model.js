@@ -20,6 +20,10 @@ export default class Movie {
         }));
     }
 
+    static findOne(id){
+        return db.movies.find(movie => id === movie.id);
+    }
+
     async save(){
         db.movies.push(this);
         const dbSerialize = JSON.stringify(db, null , 2);

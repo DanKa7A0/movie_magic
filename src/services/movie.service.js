@@ -4,8 +4,8 @@ function getAll(){
     return Movie.findAll();
 }
 
-function getOne(){
-
+function getOne(id){
+    return Movie.findOne(id);
 }
 
 async function createMovie(data){
