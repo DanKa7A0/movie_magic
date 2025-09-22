@@ -5,7 +5,9 @@ function getAll(){
 }
 
 function getOne(id){
-    return Movie.findOne(id);
+    const movie = Movie.findOne(id);
+    movie.ratingStars = "&#x2605;".repeat(movie.rating);
+    return movie;
 }
 
 async function createMovie(data){
