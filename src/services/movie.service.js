@@ -3,7 +3,6 @@ import Movie from "../models/movie.model.js";
 function getAll(filter){
     let movies = Movie.findAll();
 
-    console.log(filter);
     if (filter.title) movies = movies.filter(movie => movie.title.toLowerCase().includes(filter.title.toLowerCase()));
     if (filter.genre) movies = movies.filter(movie => movie.genre.toLowerCase().includes(filter.genre.toLowerCase()));
     if (filter.year) movies = movies.filter(movie => movie.year === filter.year);
