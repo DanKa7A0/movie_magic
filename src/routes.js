@@ -7,4 +7,8 @@ const routes = Router();
 routes.use(homeController);
 routes.use("/movies", movieController);
 
+routes.get("*not", (req, res) => {
+    res.render("404", {pageTitle: "Not found page"});
+});
+
 export default routes;

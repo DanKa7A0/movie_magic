@@ -47,7 +47,7 @@ Express JS backend project
    - [x] By title 
  - [x] Remember search words
 ### Bonuses
- - [ ] Dynamic page title
+ - [x] Dynamic page title
  - [x] Rating (temp solution)
  - [x] File Persistance
- - [ ] Add 404 page
+ - [x] Add 404 page
