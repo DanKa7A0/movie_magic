@@ -6,11 +6,11 @@ const homeController = Router();
 homeController.get("/", (req, res) => {
     const movies = movieService.getAll();
 
-    res.render("home", { movies });
+    res.render("home", { movies, pageTitle: "Catalog page" });
 });
 
 homeController.get("/about", (req, res) => {
-    res.render("about");
+    res.render("about", { pageTitle: "About page" });
 });
 
 export default homeController;

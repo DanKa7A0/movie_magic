@@ -1,6 +1,6 @@
 import Movie from "../models/movie.model.js";
 
-function getAll(filter){
+function getAll(filter = {}){
     let movies = Movie.findAll();
 
     if (filter.title) movies = movies.filter(movie => movie.title.toLowerCase().includes(filter.title.toLowerCase()));
