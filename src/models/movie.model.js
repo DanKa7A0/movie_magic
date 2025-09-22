@@ -11,12 +11,13 @@ export default class Movie {
     }
 
     static findAll(){
-        return db.movies.map(movie => ({
+       return db.movies.map(movie => ({
             id: movie.id
             , title: movie.title
             , imgUrl: movie.imgUrl
             , genre: movie.genre
             , description: movie.description
+            , year: movie.year
         }));
     }
 
