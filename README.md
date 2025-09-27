@@ -63,4 +63,4 @@ Express JS backend project
 - [x] Fix home controller to read from mongodb
 - [x] Fix details page
 - [x] Fix create page
-- [ ] Fix search page
+- [x] Fix search page
