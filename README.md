@@ -4,6 +4,7 @@ Express JS backend project
 
 ## Development steps
 
+## Part 1 - express js
 ### Setup
  - [x] Initialize Project
  - [x] Add Express Server `npm i express`
@@ -51,3 +52,12 @@ Express JS backend project
  - [x] Rating (temp solution)
  - [x] File Persistance
  - [x] Add 404 page
+
+
+## Part 2 - mongoDB
+### Change file persistance with mongo db
+- [x] Install mongoose
+- [ ] import data
+- [ ] Connect to db
+- [ ] Create movie model for mongodb
+- [ ] Fix home controller to read from mongodb
