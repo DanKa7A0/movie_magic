@@ -1,4 +1,5 @@
 import { Router } from "express";
+import castService from "../services/cast.service";
 
 const castController = Router();
 
@@ -6,9 +7,9 @@ castController.get("/create", (req, res) => {
     res.render("casts/create", { pageTitle: "Create cast" });
 });
 
-castController.post("/create", (req, res) => {
+castController.post("/create", async (req, res) => {
     const data = req.body;
-    console.log(data);
+    await castService.createCast(data);
     res.end();
 });
 
