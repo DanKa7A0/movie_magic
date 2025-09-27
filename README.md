@@ -68,7 +68,7 @@ Express JS backend project
 ### Create cast page
 - [x] Import new resoureses
 - [x] Add nav button
-- [ ] Create cast controller
-- [ ] Render page
+- [x] Create cast controller
+- [x] Render page
 - [ ] Create cast services
 - [ ] Create cast model
