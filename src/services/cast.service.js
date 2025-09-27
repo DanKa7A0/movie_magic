@@ -1,8 +1,7 @@
-
+import Cast from "../models/Cast.js";
 
 async function createCast(data){
-    console.log(data);
-    // return await Cast.create(data);
+    return await Cast.create(data);
 }
 
 export default { createCast }

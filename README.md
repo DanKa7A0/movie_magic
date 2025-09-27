@@ -71,5 +71,5 @@ Express JS backend project
 - [x] Create cast controller
 - [x] Render page
 - [x] Create post create cast
-- [ ] Create cast services
+- [x] Create cast services
 - [ ] Create cast model
