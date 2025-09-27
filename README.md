@@ -57,7 +57,7 @@ Express JS backend project
 ## Part 2 - mongoDB
 ### Change file persistance with mongo db
 - [x] Install mongoose
-- [ ] import data
 - [ ] Connect to db
+- [ ] import data
 - [ ] Create movie model for mongodb
 - [ ] Fix home controller to read from mongodb
