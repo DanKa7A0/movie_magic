@@ -64,3 +64,11 @@ Express JS backend project
 - [x] Fix details page
 - [x] Fix create page
 - [x] Fix search page
+
+### Create cast page
+- [x] Import new resoureses
+- [ ] Add nav button
+- [ ] Create cast controller
+- [ ] Render page
+- [ ] Create cast services
+- [ ] Create cast model
