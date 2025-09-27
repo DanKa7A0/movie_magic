@@ -10,8 +10,8 @@ async function getAll(filter = {}){
     return movies;
 }
 
-function getOne(id){
-    const movie = Movie.findOne(id);
+async function getOne(id){
+    const movie = await Movie.findById(id);
     movie.ratingStars = "&#x2605;".repeat(movie.rating);
     return movie;
 }

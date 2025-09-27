@@ -13,10 +13,9 @@ movieController.post("/create", async (req, res) => {
     res.redirect("/");
 });
 
-movieController.get("/details/:id", (req, res) => {
+movieController.get("/details/:id", async (req, res) => {
     const id = req.params.id;
-    const movie = movieService.getOne(id);
-    console.log(movie);
+    const movie = await movieService.getOne(id);
 
     res.render("details", { movie, pageTitle: "Details page" });
 });

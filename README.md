@@ -61,3 +61,6 @@ Express JS backend project
 - [x] import data
 - [x] Create movie model for mongodb
 - [x] Fix home controller to read from mongodb
+- [x] Fix details page
+- [ ] Fix create page
+- [ ] Fix search page
