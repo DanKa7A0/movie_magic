@@ -1,11 +1,12 @@
-import Movie from "../models/movie.model.js";
+import Movie from "../models/Movie.js";
 
-function getAll(filter = {}){
-    let movies = Movie.findAll();
+async function getAll(filter = {}){
+    let movies = await Movie.find();
 
     if (filter.title) movies = movies.filter(movie => movie.title.toLowerCase().includes(filter.title.toLowerCase()));
     if (filter.genre) movies = movies.filter(movie => movie.genre.toLowerCase().includes(filter.genre.toLowerCase()));
     if (filter.year) movies = movies.filter(movie => movie.year === filter.year);
+
     return movies;
 }
 
