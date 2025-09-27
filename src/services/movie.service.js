@@ -17,8 +17,9 @@ async function getOne(id){
 }
 
 async function createMovie(data){
-    const movie = new Movie(data);
-    return await movie.save();
+    // const movie = new Movie(data);
+    // return await movie.save();
+    return await Movie.create(data);
 }
 
 export default {getAll, getOne, createMovie};

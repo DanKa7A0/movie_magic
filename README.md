@@ -62,5 +62,5 @@ Express JS backend project
 - [x] Create movie model for mongodb
 - [x] Fix home controller to read from mongodb
 - [x] Fix details page
-- [ ] Fix create page
+- [x] Fix create page
 - [ ] Fix search page

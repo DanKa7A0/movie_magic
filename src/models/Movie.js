@@ -5,7 +5,7 @@ const movieSchema = new Schema({
     , category: { type: String, require: true }
     , genre: { type: String, require: true }
     , director: { type: String, require: true }
-    , year: { type: Number, require: true, min: 0, max: 120 }
+    , year: { type: Number, require: true, min: 1900, max: 2025 }
     , rating: { type: Number, require: true, min: 1, max: 10 }
     , description: { type: String, require: true, max: 255 }
     , imgUrl: { type: String, require: true }
