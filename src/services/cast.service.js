@@ -4,4 +4,8 @@ async function createCast(data){
     return await Cast.create(data);
 }
 
-export default { createCast }
+async function readCasts(){
+    return await Cast.find();
+}
+
+export default { createCast, readCasts }
