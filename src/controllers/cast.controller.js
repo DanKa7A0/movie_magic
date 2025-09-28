@@ -1,5 +1,6 @@
 import { Router } from "express";
 import castService from "../services/cast.service.js";
+import movieService from "../services/movie.service.js";
 
 const castController = Router();
 
@@ -14,9 +15,10 @@ castController.post("/create", async (req, res) => {
 });
 
 castController.get("/attach/:id", async (req, res) => {
-    const casts = await castService.readCasts();
-
-    res.render("casts/attach", { pageTitle: "Attach page", casts });
+    const casts = await castService.readCasts();;
+    const movie = await movieService.getOne(req.params.id);
+    
+    res.render("casts/attach", { pageTitle: "Attach page", casts, movie });
 });
 
 export default castController;
