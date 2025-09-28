@@ -13,4 +13,8 @@ castController.post("/create", async (req, res) => {
     res.redirect("/");
 });
 
+castController.get("/attach/:id", (req, res) => {
+    res.render("casts/attach", { pageTitle: "Attach page" });
+});
+
 export default castController;

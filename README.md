@@ -76,7 +76,7 @@ Express JS backend project
 
 ### Attach cast
 - [x] Add button redirect to attach page
-- [ ] Render attach page
+- [x] Render attach page
 - [ ] Read all casts from db
 - [ ] Make relation in movies to ref casts
 - [ ] Save cast to movie
