@@ -72,4 +72,11 @@ Express JS backend project
 - [x] Render page
 - [x] Create post create cast
 - [x] Create cast services
-- [ ] Create cast model
+- [x] Create cast model
+
+### Attach cast
+- [x] Add button redirect to attach page
+- [ ] Render attach page
+- [ ] Read all casts from db
+- [ ] Make relation in movies to ref casts
+- [ ] Save cast to movie
