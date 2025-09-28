@@ -22,4 +22,9 @@ async function createMovie(data){
     return await Movie.create(data);
 }
 
-export default {getAll, getOne, createMovie};
+
+async function attachCast(cast_ID, movie_ID){
+    return await Movie.findByIdAndUpdate(movie_ID, {$push: {casts: cast_ID}});
+}
+
+export default {getAll, getOne, createMovie, attachCast};
