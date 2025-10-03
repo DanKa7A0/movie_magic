@@ -81,3 +81,14 @@ Express JS backend project
 - [x] Make dynamic attach page 
 - [x] Make relation in movies to ref casts
 - [x] Save cast to movie
+
+
+### Update details page
+- [x] Add new html for casts
+- [ ] Get casts for movie
+- [ ] Render dynamic casts for movie
+
+
+### Bonus
+- [ ] Show casts that's not added to movie
+- [ ] Move details pages to folder
