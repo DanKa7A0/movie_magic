@@ -1,7 +1,8 @@
 import Movie from "../models/Movie.js";
 
 async function getAll(filter = {}){
-    let movies = await Movie.find();
+    const query = { title: 1, genre: 1, description: 1, imgUrl: 1 };
+    let movies = await Movie.find({}, query);
 
     if (filter.title) movies = movies.filter(movie => movie.title.toLowerCase().includes(filter.title.toLowerCase()));
     if (filter.genre) movies = movies.filter(movie => movie.genre.toLowerCase().includes(filter.genre.toLowerCase()));

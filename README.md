@@ -86,6 +86,8 @@ Express JS backend project
 ### Update details page
 - [x] Add new html for casts
 - [x] Render dynamic casts for movie
+- [ ] Fix GetAll (movies) to return main movie fields
+- [ ] Fix getOne (movies) to return all movie info and casts
 - [ ] Get casts for concrect movie
 
 
