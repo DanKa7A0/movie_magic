@@ -1,7 +1,9 @@
 import express from "express";
-import handlebars from "express-handlebars";
-import routes from "./routes.js";
 import mongoose from "mongoose";
+import handlebars from "express-handlebars";
+import cookieParser from "cookie-parser";
+
+import routes from "./routes.js";
 
 const app = express();
 const PORT = 5000;
@@ -29,6 +31,7 @@ app.set("views", "src/views");
 // setup
 app.use(express.static('src/public'));
 app.use(express.urlencoded());
+app.use(cookieParser());
 
 // routing
 app.use(routes);
