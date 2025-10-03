@@ -90,6 +90,6 @@ Express JS backend project
 - [x] Fix getOne (movies) to return all movie info and casts
 
 ### Bonus
+- [x] Move movies pages to folder
 - [ ] Show casts that's not added to movie
-- [ ] Move details pages to folder
 - [ ] Set name in movie when attach cast to movie
