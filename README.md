@@ -85,10 +85,11 @@ Express JS backend project
 
 ### Update details page
 - [x] Add new html for casts
-- [ ] Get casts for movie
-- [ ] Render dynamic casts for movie
+- [x] Render dynamic casts for movie
+- [ ] Get casts for concrect movie
 
 
 ### Bonus
 - [ ] Show casts that's not added to movie
 - [ ] Move details pages to folder
+- [ ] Set name in movie when attach cast to movie
