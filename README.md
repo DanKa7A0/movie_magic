@@ -93,3 +93,21 @@ Express JS backend project
 - [x] Move movies pages to folder
 - [ ] Show casts that's not added to movie
 - [ ] Set name in movie when attach cast to movie
+
+
+## Part 3 - Session and Authentication
+- [x] Install jwt
+- [ ] Install bcrypt
+- [ ] Install cookie-parser
+
+### Register page
+
+### Login page
+
+### Routes
+
+### Create movie add creator_ID
+
+### Edit movie (creator)
+
+### Delete movie (creator)
