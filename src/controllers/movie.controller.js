@@ -17,9 +17,8 @@ movieController.post("/create", async (req, res) => {
 movieController.get("/details/:id", async (req, res) => {
     const id = req.params.id;
     const movie = await movieService.getOne(id);
-    const casts = await castService.readCasts();
 
-    res.render("details", { pageTitle: "Details page", movie, casts });
+    res.render("details", { pageTitle: "Details page", movie });
 });
 
 movieController.get("/search", async (req, res) => {

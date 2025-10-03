@@ -12,8 +12,12 @@ async function getAll(filter = {}){
 }
 
 async function getOne(id){
-    const movie = await Movie.findById(id);
+    // movie
+    const movie = await Movie.findById(id).populate("casts");
     movie.ratingStars = "&#x2605;".repeat(movie.rating);
+
+    console.log(movie);
+
     return movie;
 }
 
