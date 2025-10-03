@@ -97,7 +97,7 @@ Express JS backend project
 
 ## Part 3 - Session and Authentication
 - [x] Install jwt
-- [ ] Install bcrypt
+- [x] Install bcrypt
 - [ ] Install cookie-parser
 
 ### Register page
