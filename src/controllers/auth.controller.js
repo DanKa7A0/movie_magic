@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { Login, Register } from "../services/auth.service.js";
-import { isGuest } from "../middlewares/auth.middlewares.js";
+import { isAuth, isGuest } from "../middlewares/auth.middlewares.js";
 
 const userController = Router();
 
@@ -13,7 +13,7 @@ userController.post("/register", async (req, res) => {
     res.redirect("/login");
 });
 
-userController.get("/login", (req, res) => {
+userController.get("/login", isGuest, (req, res) => {
     res.render("auth/login");
 });
 
@@ -22,7 +22,7 @@ userController.post("/login", async (req, res) => {
     res.cookie("auth", token).redirect("/");
 });
 
-userController.get("/logout", (req, res) => {
+userController.get("/logout", isAuth, (req, res) => {
     res.clearCookie("auth").redirect("/");
 });
 

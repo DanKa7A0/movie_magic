@@ -4,6 +4,7 @@ import handlebars from "express-handlebars";
 import cookieParser from "cookie-parser";
 
 import routes from "./routes.js";
+import authMiddleware from "./middlewares/auth.middlewares.js";
 
 const app = express();
 const PORT = 5000;
@@ -32,6 +33,7 @@ app.set("views", "src/views");
 app.use(express.static('src/public'));
 app.use(express.urlencoded());
 app.use(cookieParser());
+app.use(authMiddleware);
 
 // routing
 app.use(routes);

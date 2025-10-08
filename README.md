@@ -121,7 +121,8 @@ Express JS backend project
 
 ### Routes
 - [x] Auth middleware
-- [ ] route guards
+- [x] route guards
+- [ ] Fix nav for auth and not users
 
 ### Create movie add creator_ID
 

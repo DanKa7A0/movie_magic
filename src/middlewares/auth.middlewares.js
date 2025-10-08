@@ -25,13 +25,13 @@ export default function authMiddleware(req, res, next) {
         // Invalid user
         res.clearCookie('auth');
 
-        res.redirect('/auth/login');
+        res.redirect('/login');
     }
 }
 
 export function isAuth(req, res, next) {
     if (!req.isAuthenticated) {
-        return res.redirect('/auth/login');
+        return res.redirect('/login');
     }
 
     next();

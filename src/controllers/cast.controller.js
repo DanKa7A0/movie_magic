@@ -1,10 +1,11 @@
 import { Router } from "express";
 import castService from "../services/cast.service.js";
 import movieService from "../services/movie.service.js";
+import { isAuth } from "../middlewares/auth.middlewares.js";
 
 const castController = Router();
 
-castController.get("/create", (req, res) => {
+castController.get("/create", isAuth, (req, res) => {
     res.render("casts/create", { pageTitle: "Create cast" });
 });
 
@@ -14,7 +15,7 @@ castController.post("/create", async (req, res) => {
     res.redirect("/");
 });
 
-castController.get("/attach/:id", async (req, res) => {
+castController.get("/attach/:id", isAuth, async (req, res) => {
     const casts = await castService.readCasts();
     const movie = await movieService.getOne(req.params.id);
     
