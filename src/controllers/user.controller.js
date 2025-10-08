@@ -18,8 +18,11 @@ userController.get("/login", (req, res) => {
 
 userController.post("/login", async (req, res) => {
     const token = await Login(req.body.email, req.body.pass);
-    res.cookie("auth", token);
-    res.redirect("/");
+    res.cookie("auth", token).redirect("/");
+});
+
+userController.get("/logout", (req, res) => {
+    res.clearCookie("auth").redirect("/");
 });
 
 export default userController;

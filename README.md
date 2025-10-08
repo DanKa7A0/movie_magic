@@ -116,6 +116,9 @@ Express JS backend project
 - [x] JWT token gener
 - [x] JWT token appedn cookie
 
+### Logout
+- [x] Remove jwt cookie
+
 ### Routes
 
 ### Create movie add creator_ID
@@ -126,3 +129,4 @@ Express JS backend project
 
 ### Bonus
 - [ ] Automatic login after registration
+- [ ] Invalidate jwt on logout
