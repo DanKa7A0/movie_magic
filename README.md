@@ -120,6 +120,8 @@ Express JS backend project
 - [x] Remove jwt cookie
 
 ### Routes
+- [x] Auth middleware
+- [ ] route guards
 
 ### Create movie add creator_ID
 
@@ -130,3 +132,4 @@ Express JS backend project
 ### Bonus
 - [ ] Automatic login after registration
 - [ ] Invalidate jwt on logout
+- [ ] Move JWT secret to env
