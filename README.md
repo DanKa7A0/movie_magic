@@ -110,6 +110,10 @@ Express JS backend project
 - [x] Hash the password
 
 ### Login page
+- [x] Add login in user controller
+- [ ] Add login page
+- [ ] Add login in user service
+- [ ] JWT token
 
 ### Routes
 
