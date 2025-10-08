@@ -1,9 +1,10 @@
 import { Router } from "express";
 import { Login, Register } from "../services/auth.service.js";
+import { isGuest } from "../middlewares/auth.middlewares.js";
 
 const userController = Router();
 
-userController.get("/register", (req, res) => {
+userController.get("/register", isGuest, (req, res) => {
     res.render("auth/register");
 });
 

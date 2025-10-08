@@ -2,7 +2,7 @@ import { Router } from "express";
 import homeController from "./controllers/home.controller.js";
 import movieController from "./controllers/movie.controller.js";
 import castController from "./controllers/cast.controller.js";
-import userController from "./controllers/user.controller.js";
+import userController from "./controllers/auth.controller.js";
 
 const routes = Router();
 
