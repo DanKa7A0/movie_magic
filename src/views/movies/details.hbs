@@ -20,7 +20,11 @@
 
                 <p class="disc">Description: {{movie.description}}</p>
                 <p class="card-category">Category: {{movie.category}}</p>
-                <a href="/casts/attach/{{movie.id}}" class="details">Attach</a>
+                <div class="details-btn">
+                    <a href="/casts/attach/{{movie.id}}" class="details">Attach</a>
+                    <button id="edit-button">Edit</button>
+                    <button id="delete-button">Delete</button>
+                </div>
             </div>
         </div>
         <div class="card_right">

@@ -99,6 +99,7 @@ Express JS backend project
 - [x] Install jwt
 - [x] Install bcrypt
 - [x] Install cookie-parser
+- [ ] Add resources
 
 ### Register page
 
