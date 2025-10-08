@@ -111,7 +111,7 @@ Express JS backend project
 
 ### Login page
 - [x] Add login in user controller
-- [ ] Add login page
+- [x] Add login page
 - [ ] Add login in user service
 - [ ] JWT token
 
