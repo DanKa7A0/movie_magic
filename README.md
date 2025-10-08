@@ -104,7 +104,7 @@ Express JS backend project
 ### Register page
 - [x] Add nav
 - [x] Add user controller
-- [ ] Add user page
+- [ ] Add register page
 - [ ] Add user model
 - [ ] Add user service
 - [ ] Hash the password
