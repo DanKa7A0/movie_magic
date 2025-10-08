@@ -112,8 +112,9 @@ Express JS backend project
 ### Login page
 - [x] Add login in user controller
 - [x] Add login page
-- [ ] Add login in user service
-- [ ] JWT token
+- [x] Add login in user service
+- [x] JWT token gener
+- [x] JWT token appedn cookie
 
 ### Routes
 

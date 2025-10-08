@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Register } from "../services/auth.service.js";
+import { Login, Register } from "../services/auth.service.js";
 
 const userController = Router();
 
@@ -14,6 +14,12 @@ userController.post("/register", async (req, res) => {
 
 userController.get("/login", (req, res) => {
     res.render("auth/login");
+});
+
+userController.post("/login", async (req, res) => {
+    const token = await Login(req.body.email, req.body.pass);
+    res.cookie("auth", token);
+    res.redirect("/");
 });
 
 export default userController;

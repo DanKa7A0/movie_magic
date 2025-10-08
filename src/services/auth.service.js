@@ -16,4 +16,7 @@ export async function Login(email, pass){
     if (!passCheck){
         throw new Error("Invalid user or password");
     }
+    
+    const token = GenAccessToken(user);
+    return token;
 }
