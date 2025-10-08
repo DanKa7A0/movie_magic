@@ -103,7 +103,7 @@ Express JS backend project
 
 ### Register page
 - [x] Add nav
-- [ ] Add user controller
+- [x] Add user controller
 - [ ] Add user page
 - [ ] Add user model
 - [ ] Add user service
