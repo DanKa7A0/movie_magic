@@ -107,7 +107,7 @@ Express JS backend project
 - [x] Add register page
 - [x] Add user model
 - [x] Add user service
-- [ ] Hash the password
+- [x] Hash the password
 
 ### Login page
 

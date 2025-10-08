@@ -8,9 +8,8 @@ userController.get("/register", (req, res) => {
 });
 
 userController.post("/register", async (req, res) => {
-   await Register(req.body);
-   res.end();
-    // res.redirect("/login");
+    await Register(req.body);
+    res.redirect("/login");
 });
 
 export default userController;
