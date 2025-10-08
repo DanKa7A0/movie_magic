@@ -99,9 +99,15 @@ Express JS backend project
 - [x] Install jwt
 - [x] Install bcrypt
 - [x] Install cookie-parser
-- [ ] Add resources
+- [x] Add resources
 
 ### Register page
+- [x] Add nav
+- [ ] Add user controller
+- [ ] Add user page
+- [ ] Add user model
+- [ ] Add user service
+- [ ] Hash the password
 
 ### Login page
 
@@ -112,3 +118,6 @@ Express JS backend project
 ### Edit movie (creator)
 
 ### Delete movie (creator)
+
+### Bonus
+- [ ] Automatic login after registration
