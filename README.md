@@ -128,6 +128,7 @@ Express JS backend project
 - [x] update movie model add creator id ref
 - [x] get user id in user controller
 - [x] set user id as creator in user service
+- [x] fix details buttons only for creator
 
 ### Edit movie (creator)
 

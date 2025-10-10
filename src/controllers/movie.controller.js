@@ -19,8 +19,8 @@ movieController.post("/create", isAuth, async (req, res) => {
 movieController.get("/details/:id", async (req, res) => {
     const id = req.params.id;
     const movie = await movieService.getOne(id);
-
-    res.render("movies/details", { pageTitle: "Details page", movie });
+    const isCreator = movie.creator_ID && movie.creator_ID.equals(req.user.id);
+    res.render("movies/details", { pageTitle: "Details page", movie, isCreator });
 });
 
 movieController.get("/search", async (req, res) => {
