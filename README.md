@@ -127,7 +127,7 @@ Express JS backend project
 ### Create movie add creator_ID
 - [x] update movie model add creator id ref
 - [x] get user id in user controller
-- [ ] set user id as creator in user service
+- [x] set user id as creator in user service
 
 ### Edit movie (creator)
 

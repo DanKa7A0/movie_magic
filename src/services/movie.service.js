@@ -19,10 +19,14 @@ async function getOne(id){
     return movie;
 }
 
-async function createMovie(data){
+async function createMovie(data, user_ID){
     // const movie = new Movie(data);
     // return await movie.save();
-    return await Movie.create(data);
+    
+    return await Movie.create({
+        ...data
+        , creator_ID: user_ID
+    });
 }
 
 
