@@ -23,8 +23,8 @@
                 {{#if isCreator}}
                 <div class="details-btn">
                     <a href="/casts/attach/{{movie.id}}" class="details">Attach</a>
-                    <a href="/movie/edit/{{movie.id}}" class="details">Edit</a>
-                    <a href="/movie/delete/{{movie.id}}" class="details" onclick="return  ShowDeleteConfirm()">Delete</a>
+                    <a href="/movies/edit/{{movie.id}}" class="details">Edit</a>
+                    <a href="/movies/delete/{{movie.id}}" class="details" onclick="return  ShowDeleteConfirm()">Delete</a>
                 </div>
                 {{/if}}
             </div>
@@ -54,6 +54,6 @@
 
 <script>
     function ShowDeleteConfirm(){
-        return confirm('Сигурен ли си, че искаш да изтриеш филма?');
+        return confirm('Do you want to delete the movie?');
     }
 </script>
