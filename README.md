@@ -132,7 +132,7 @@ Express JS backend project
 
 ### Delete movie (creator)
 - [x] Confirm message for delete
-- [ ] Add delete in movie controller
+- [x] Add delete in movie controller
 - [ ] Add delete in movie service
 - [ ] Redirect to home page
 
