@@ -125,6 +125,9 @@ Express JS backend project
 - [x] Fix nav for auth and not users
 
 ### Create movie add creator_ID
+- [x] update movie model add creator id ref
+- [x] get user id in user controller
+- [ ] set user id as creator in user service
 
 ### Edit movie (creator)
 

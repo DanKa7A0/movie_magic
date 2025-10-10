@@ -9,9 +9,10 @@ movieController.get("/create", isAuth, (req, res) => {
     res.render("movies/create", {pageTitle: "Create page"});
 });
 
-movieController.post("/create", async (req, res) => {
+movieController.post("/create", isAuth, async (req, res) => {
     const data = req.body;
-    await movieService.createMovie(data);
+    const user_ID = req.user.id;
+    await movieService.createMovie(data, user_ID);
     res.redirect("/");
 });
 
