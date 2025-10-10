@@ -130,9 +130,13 @@ Express JS backend project
 - [x] set user id as creator in user service
 - [x] fix details buttons only for creator
 
-### Edit movie (creator)
-
 ### Delete movie (creator)
+- [x] Confirm message for delete
+- [ ] Add delete in movie controller
+- [ ] Add delete in movie service
+- [ ] Redirect to home page
+
+### Edit movie (creator)
 
 ### Bonus
 - [ ] Automatic login after registration
