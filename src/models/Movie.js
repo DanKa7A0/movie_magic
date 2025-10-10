@@ -13,6 +13,10 @@ const movieSchema = new Schema({
         type: Types.ObjectId
         , ref: "Cast"
     }]
+    , creator_ID: {
+        type: Types.ObjectId
+        , ref: "User"
+    }
 });
 
 const Movie = mongoose.model("Movie", movieSchema);
