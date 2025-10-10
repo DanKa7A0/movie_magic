@@ -122,7 +122,7 @@ Express JS backend project
 ### Routes
 - [x] Auth middleware
 - [x] route guards
-- [ ] Fix nav for auth and not users
+- [x] Fix nav for auth and not users
 
 ### Create movie add creator_ID
 
