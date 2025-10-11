@@ -148,4 +148,4 @@ Express JS backend project
 - [ ] Invalidate jwt on logout
 - [ ] Move JWT secret to env
 - [ ] Move set page title in the view 
-- [ ] Fix dropdown category dynamic data
+- [x] Fix dropdown category dynamic data
