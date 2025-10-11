@@ -138,8 +138,9 @@ Express JS backend project
 
 ### Edit movie (creator)
 - [x] Add edit in movie controller
-- [ ] Render dynamic data from the movie
-- [ ] Add edit in movie service
+- [x] Render dynamic data from the movie
+- [x] Post edit in controller
+- [ ] Update movie in movie service
 - [ ] Redirect to movie details
 
 ### Bonus
@@ -147,3 +148,4 @@ Express JS backend project
 - [ ] Invalidate jwt on logout
 - [ ] Move JWT secret to env
 - [ ] Move set page title in the view 
+- [ ] Fix dropdown category dynamic data
