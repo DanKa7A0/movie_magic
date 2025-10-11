@@ -137,6 +137,10 @@ Express JS backend project
 - [x] Redirect to home page
 
 ### Edit movie (creator)
+- [ ] Add edit in movie controller
+- [ ] Render dynamic data from the movie
+- [ ] Add edit in movie service
+- [ ] Redirect to movie details
 
 ### Bonus
 - [ ] Automatic login after registration
