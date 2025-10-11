@@ -40,7 +40,9 @@ movieController.post("/attach/:id", async (req, res) => {
 });
 
 movieController.get("/edit/:id", async (req, res) => {
-    res.render("movies/edit", { pageTitle: "Edit page" });
+    const movie_ID = req.params.id;
+    const movie = await movieService.getOne(movie_ID);
+    res.render("movies/edit", { movie, pageTitle: "Edit page" });
 });
 
 movieController.get("/delete/:id", async (req, res) => {
