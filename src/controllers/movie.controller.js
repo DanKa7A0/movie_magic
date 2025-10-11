@@ -39,6 +39,10 @@ movieController.post("/attach/:id", async (req, res) => {
     res.redirect(`/movies/details/${movie_ID}`);
 });
 
+movieController.get("/edit/:id", async (req, res) => {
+    res.render("movies/edit", { pageTitle: "Edit page" });
+});
+
 movieController.get("/delete/:id", async (req, res) => {
     const id = req.params.id;
     await movieService.deleteMovie(id);

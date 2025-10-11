@@ -137,7 +137,7 @@ Express JS backend project
 - [x] Redirect to home page
 
 ### Edit movie (creator)
-- [ ] Add edit in movie controller
+- [x] Add edit in movie controller
 - [ ] Render dynamic data from the movie
 - [ ] Add edit in movie service
 - [ ] Redirect to movie details
@@ -146,3 +146,4 @@ Express JS backend project
 - [ ] Automatic login after registration
 - [ ] Invalidate jwt on logout
 - [ ] Move JWT secret to env
+- [ ] Move set page title in the view 
