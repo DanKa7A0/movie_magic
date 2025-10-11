@@ -46,8 +46,10 @@ movieController.get("/edit/:id", async (req, res) => {
 });
 
 movieController.post("/edit/:id", async (req, res) => {
+    const movie_ID = req.params.id;
     const data = req.body;
-    await movieService.UpdateMovie(data);
+    await movieService.UpdateMovie(movie_ID, data);
+    res.redirect("/movies/details/" + movie_ID);
 });
 
 movieController.get("/delete/:id", async (req, res) => {

@@ -140,8 +140,8 @@ Express JS backend project
 - [x] Add edit in movie controller
 - [x] Render dynamic data from the movie
 - [x] Post edit in controller
-- [ ] Update movie in movie service
-- [ ] Redirect to movie details
+- [x] Update movie in movie service
+- [x] Redirect to movie details
 
 ### Bonus
 - [ ] Automatic login after registration

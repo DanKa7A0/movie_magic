@@ -33,8 +33,12 @@ async function attachCast(cast_ID, movie_ID){
     return await Movie.findByIdAndUpdate(movie_ID, {$push: {casts: cast_ID}});
 }
 
+async function UpdateMovie(movie_ID, movieData) {
+    return await Movie.findByIdAndUpdate(movie_ID, movieData);
+}
+
 async function deleteMovie(movie_ID){
     return await Movie.findByIdAndDelete(movie_ID);
 }
 
-export default {getAll, getOne, createMovie, attachCast, deleteMovie};
+export default {getAll, getOne, createMovie, attachCast, deleteMovie, UpdateMovie};
