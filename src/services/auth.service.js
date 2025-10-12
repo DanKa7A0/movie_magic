@@ -7,7 +7,7 @@ export async function Register(userData){
 }
 
 export async function Login(email, pass){
-    const user = await User.findOne({ email });    
+    const user = await User.findOne({ email });
     if (!user){
         throw new Error("Invalid user or password");
     }

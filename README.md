@@ -152,3 +152,7 @@ Express JS backend project
 
 ## Part 4 - Validation and error handling
 - [x] Install new resources
+
+### Login page
+- [x] Validate inputs
+- [x] Error handling validation errors

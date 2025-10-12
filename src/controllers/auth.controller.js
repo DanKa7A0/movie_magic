@@ -18,8 +18,14 @@ userController.get("/login", isGuest, (req, res) => {
 });
 
 userController.post("/login", async (req, res) => {
-    const token = await Login(req.body.email, req.body.pass);
-    res.cookie("auth", token).redirect("/");
+    const {email, pass} = req.body;
+    try {
+        const token = await Login(email, pass);
+        res.cookie("auth", token).redirect("/");
+    } 
+    catch(err){
+        res.render("auth/login", { err, email });
+    }
 });
 
 userController.get("/logout", isAuth, (req, res) => {
