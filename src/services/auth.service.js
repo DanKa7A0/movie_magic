@@ -3,7 +3,12 @@ import User from "../models/Auth.js";
 import { GenAccessToken } from "../utils/token.utils.js";
 
 export async function Register(userData){
+    if (userData.pass !== userData.rePass){
+        throw new Error("Passwords don't match");
+    }
+
     return await User.create(userData);
+
 }
 
 export async function Login(email, pass){

@@ -156,3 +156,7 @@ Express JS backend project
 ### Login page
 - [x] Validate inputs
 - [x] Error handling validation errors
+
+### Register page
+- [x] Validate inputs
+- [ ] Error handling validation errors
