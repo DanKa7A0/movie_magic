@@ -149,3 +149,6 @@ Express JS backend project
 - [ ] Move JWT secret to env
 - [ ] Move set page title in the view 
 - [x] Fix dropdown category dynamic data
+
+## Part 4 - Validation and error handling
+- [x] Install new resources
