@@ -9,8 +9,17 @@ userController.get("/register", isGuest, (req, res) => {
 });
 
 userController.post("/register", async (req, res) => {
-    await Register(req.body);
-    res.redirect("/login");
+    try {
+        await Register(req.body);
+        res.redirect("/login");
+    }
+    catch(err){
+        if (err.code === 11000) {
+            err = "Email already exists";
+        }
+
+        res.render("auth/register", { err, email: req.body.email });
+    }
 });
 
 userController.get("/login", isGuest, (req, res) => {
